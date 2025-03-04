@@ -3,6 +3,8 @@
 	"rules": {
 		"react/no-unescaped-entities": "off", // 禁用 JSX 中未轉義字符的檢查
 		"jsx-a11y/alt-text": "warn", // 將 alt 屬性檢查設為警告而非錯誤
-		"@next/next/no-img-element": "off" // 禁用禁止使用 <img> 的規則
+		"@next/next/no-img-element": "off", // 禁用禁止使用 <img> 的規則
+		"react-hooks/exhaustive-deps": "warn",
+		"jsx-a11y/alt-text": "warn"
 	}
 }
