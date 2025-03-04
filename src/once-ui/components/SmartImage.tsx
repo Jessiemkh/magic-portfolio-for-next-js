@@ -17,28 +17,6 @@ export interface SmartImageProps extends React.ComponentProps<typeof Flex> {
 	sizes?: string;
 	priority?: boolean;
 }
-const usePreventSave = () => {
-	useEffect(() => {
-		const preventDefault = (e) => {
-			e.preventDefault();
-			e.stopPropagation();
-		};
-
-		document.addEventListener("contextmenu", preventDefault);
-		document.addEventListener("touchstart", preventDefault, {
-			passive: false,
-		});
-		document.addEventListener("touchmove", preventDefault, {
-			passive: false,
-		});
-
-		return () => {
-			document.removeEventListener("contextmenu", preventDefault);
-			document.removeEventListener("touchstart", preventDefault);
-			document.removeEventListener("touchmove", preventDefault);
-		};
-	}, []);
-};
 const SmartImage: React.FC<SmartImageProps> = ({
 	aspectRatio,
 	height,
@@ -60,7 +38,6 @@ const SmartImage: React.FC<SmartImageProps> = ({
 			setIsEnlarged(!isEnlarged);
 		}
 	};
-	usePreventSave();
 
 	useEffect(() => {
 		const handleEscape = (event: KeyboardEvent) => {
