@@ -1,0 +1,69 @@
+---
+title: "Computer Vision:training model for X-ray pneumonia diagnosis 自訓練模型做x光肺炎判定"
+summary: "Use mediapipe and openCV to recognize hand postures and also can use it to open a picture."
+images:
+  - "/images/projects/project-01/xrayDemo.mp4"
+team:
+  - name: "KuangHsien Ma"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/company/once-ui/"
+---
+
+# Overview
+
+Developed a system for classifying pneumonia X-ray images using deep learning, leveraging a Kaggle dataset and a pre-trained VGG19 model to detect pneumonia in X-rays.
+
+## Key Features
+
+- **Data Preprocessing**: Downloaded the pneumonia X-ray dataset from Kaggle and utilized ImageDataGenerator for data augmentation to enhance the model's generalization capabilities.
+
+- **Model Construction**: Built a classifier based on the pre-trained VGG19 model, fine-tuning and optimizing it for the pneumonia detection task.
+
+- **Parameter Tuning**: Optimized model performance and improved classification accuracy by adjusting hyperparameters such as learning rate and batch size.
+
+- **X-ray Classification**: Implemented automatic classification of input X-ray images to determine the presence of pneumonia.
+
+## Technologies Used
+
+- **TensorFlow/Keras**: Used for building and training deep learning models.
+- **VGG19**: Served as the foundation for the pre-trained model architecture.
+- **ImageDataGenerator**: Utilized for data augmentation and batch generation.
+- **Python**: The primary programming language for integrating various deep learning and image processing functionalities.
+
+## Challenges and Learnings
+
+One of the main challenges was effectively handling medical imaging data while improving the model's generalization capability with limited training data. This required carefully designing data augmentation strategies and fine-tuning model parameters to avoid overfitting. Additionally, balancing model accuracy with computational efficiency was an important consideration.
+
+## Outcome
+
+The system successfully classifies input chest X-rays, effectively identifying pneumonia cases. This project demonstrates the potential applications of deep learning in medical image analysis, providing a foundation for developing diagnostic support tools that enhance the efficiency and accuracy of pneumonia diagnosis.
+
+# 概述
+
+使用深度學習進行肺炎 X 光片分類的系統,利用 Kaggle 數據集和預訓練的 VGG19 模型來檢測 X 光片中的肺炎。
+
+## 主要特點
+
+- **數據預處理**: 從 Kaggle 下載肺炎 X 光片數據集,並使用 ImageDataGenerator 進行數據增強,提高模型的泛化能力。
+
+- **模型構建**: 基於預訓練的 VGG19 模型構建分類器,針對肺炎檢測任務進行微調和優化。
+
+- **參數調整**: 通過調整學習率、批次大小等超參數,優化模型性能並提高分類準確率。
+
+- **X 光片分類**: 實現對輸入 X 光片進行自動分類,判斷是否存在肺炎。
+
+## 使用的技術
+
+- **TensorFlow/Keras**: 用於構建和訓練深度學習模型。
+- **VGG19**: 作為預訓練模型的基礎架構。
+- **ImageDataGenerator**: 用於數據增強和批量生成。
+- **Python**: 作為主要編程語言,整合各種深度學習和圖像處理功能。
+
+## 挑戰與學習
+
+主要挑戰在於如何有效處理醫學圖像數據,並在有限的訓練數據下提高模型的泛化能力。這需要精心設計數據增強策略,並仔細調整模型參數以避免過擬合。此外,如何平衡模型的準確率和計算效率也是一個需要考慮的重要因素。
+
+## 成果
+
+該系統能夠成功對輸入的胸部 X 光片進行分類,有效識別肺炎病例。這個項目展示了深度學習在醫學圖像分析中的應用潛力,為開發輔助診斷工具提供了基礎,有助於提高肺炎診斷的效率和準確性。
