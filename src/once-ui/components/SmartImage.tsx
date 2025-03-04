@@ -17,7 +17,28 @@ export interface SmartImageProps extends React.ComponentProps<typeof Flex> {
 	sizes?: string;
 	priority?: boolean;
 }
+const usePreventSave = () => {
+	useEffect(() => {
+		const preventDefault = (e) => {
+			e.preventDefault();
+			e.stopPropagation();
+		};
 
+		document.addEventListener("contextmenu", preventDefault);
+		document.addEventListener("touchstart", preventDefault, {
+			passive: false,
+		});
+		document.addEventListener("touchmove", preventDefault, {
+			passive: false,
+		});
+
+		return () => {
+			document.removeEventListener("contextmenu", preventDefault);
+			document.removeEventListener("touchstart", preventDefault);
+			document.removeEventListener("touchmove", preventDefault);
+		};
+	}, []);
+};
 const SmartImage: React.FC<SmartImageProps> = ({
 	aspectRatio,
 	height,
@@ -39,6 +60,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
 			setIsEnlarged(!isEnlarged);
 		}
 	};
+	usePreventSave();
 
 	useEffect(() => {
 		const handleEscape = (event: KeyboardEvent) => {
@@ -104,7 +126,6 @@ const SmartImage: React.FC<SmartImageProps> = ({
 	return (
 		<>
 			<Flex
-				onContextMenu={(e) => e.preventDefault()}
 				ref={imageRef}
 				fillWidth
 				overflow="hidden"
@@ -117,6 +138,13 @@ const SmartImage: React.FC<SmartImageProps> = ({
 					height: aspectRatio ? "" : height ? `${height}rem` : "100%",
 					aspectRatio,
 					borderRadius: isEnlarged ? "0" : undefined,
+					WebkitTouchCallout: "none",
+					WebkitUserSelect: "none",
+					KhtmlUserSelect: "none",
+					MozUserSelect: "none",
+					msUserSelect: "none",
+					userSelect: "none",
+					pointerEvents: "none",
 					...calculateTransform(),
 				}}
 				onClick={handleClick}
