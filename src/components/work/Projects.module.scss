@@ -1,17 +1,24 @@
 .hover {
-    transition: var(--transition-micro-medium);
+	transition: var(--transition-micro-medium);
 
-    &:hover {
-        transform: translateX(var(--static-space-8));
+	&:hover {
+		transform: translateX(var(--static-space-8));
 
-        .indicator {
-            transform: rotate(0);
-        }
-    }
+		.indicator {
+			transform: rotate(0);
+		}
+	}
 }
 
 .indicator {
-    transform: rotate(-90deg);
-    left: -2rem;
-    transition: var(--transition-micro-medium);
+	transform: rotate(-90deg);
+	left: -2rem;
+	transition: var(--transition-micro-medium);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
 }

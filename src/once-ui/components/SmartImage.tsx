@@ -104,6 +104,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
 	return (
 		<>
 			<Flex
+				onContextMenu={(e) => e.preventDefault()}
 				ref={imageRef}
 				fillWidth
 				overflow="hidden"
