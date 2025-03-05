@@ -293,7 +293,13 @@ const gallery = {
 	title: "My photo gallery",
 	description: `A photo collection by ${person.name}`,
 	// Images from https://pexels.com
-	images: [],
+	images: [
+		{
+			src: "/images/projects/project-01/workDisplay06.jpg",
+			alt: "demo01",
+			orientation: "vertical",
+		},
+	],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
