@@ -57,7 +57,7 @@ const home = {
 		<>
 			I'm Jessie, a fullstack engineer , also a pharmacist—quite an unusual
 			combination, isn’t it?
-			<br /> As a<InlineCode>fullstack engineer </InlineCode> , I craft
+			<br /> As a <InlineCode> fullstack engineer </InlineCode> , I craft
 			intuitive user experiences. After hours, I build my own projects.
 		</>
 	),
@@ -263,7 +263,7 @@ const about = {
 			},
 			{
 				title:
-					"使用：React, Vue, TypeScript,Python, PostgreSQL, MongoDB, Redis, Git, GitLab",
+					"使用：React, Vue, TypeScript, Python, PostgreSQL, MongoDB, Redis, Git, GitLab",
 				description: <></>,
 				// optional: leave the array empty if you don't want to display images
 				images: [],
