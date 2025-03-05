@@ -34,7 +34,7 @@ const social = [
 	{
 		name: "LinkedIn",
 		icon: "linkedin",
-		link: "https://www.linkedin.com/company/once-ui/",
+		link: "",
 	},
 	{
 		name: "X",
@@ -57,7 +57,7 @@ const home = {
 		<>
 			I'm Jessie, a fullstack engineer , also a pharmacist—quite an unusual
 			combination, isn’t it?
-			<br /> As <InlineCode>fullstack engineer </InlineCode> , where I craft
+			<br /> As a<InlineCode>fullstack engineer </InlineCode> , I craft
 			intuitive user experiences. After hours, I build my own projects.
 		</>
 	),
@@ -101,8 +101,7 @@ const about = {
 						我是個全端工程師，但同時也是一名藥師——這樣的跨界組合有點特殊？
 						在軟體工程領域，我熱衷於將複雜的挑戰化繁為簡，設計出直觀又好用的解決方案。
 						作為一名藥師，我擁有豐富的臨床醫學經驗。
-						我的跨領域背景讓我能用獨特的視角切入問題，並且更深入地理解使用者的需求。
-						不管是解決程式上的問題，還是醫藥臨床上的難題，我都能高效地完成任務！
+						這些經驗使我能夠以獨特的視角切入問題，為軟體開發和醫療領域帶來創新的解決方案。無論面對何種挑戰，我都能夠運用跨領域知識，高效且創新地完成任務！
 					</p>
 				</div>
 			</>
@@ -232,10 +231,6 @@ const about = {
 		title: "Studies",
 		institutions: [
 			{
-				name: "Taipei Medical University ",
-				description: <>Pharmacy</>,
-			},
-			{
 				name: "National Central University",
 				description: (
 					<>
@@ -244,6 +239,10 @@ const about = {
 					</>
 				),
 			},
+			{
+				name: "Taipei Medical University ",
+				description: <>Pharmacy</>,
+			},
 		],
 	},
 	technical: {
@@ -251,11 +250,11 @@ const about = {
 		title: "Technical skills",
 		skills: [
 			{
-				title: "AWS Solutions Architect Associate",
+				title: "AWS Solutions Architect Associate AWS 雲端架構師助理級認證",
 				description: (
 					<>
 						取得 AWS Certified Cloud Practitioner 和 Solutions Architect
-						Associate認證
+						Associate 認證
 					</>
 				),
 
@@ -263,7 +262,8 @@ const about = {
 				images: [],
 			},
 			{
-				title: "使用：React Vue TypeScript PostgreSQL MongoDB Redis Git GitLab",
+				title:
+					"使用：React, Vue, TypeScript,Python, PostgreSQL, MongoDB, Redis, Git, GitLab",
 				description: <></>,
 				// optional: leave the array empty if you don't want to display images
 				images: [],
@@ -281,7 +281,7 @@ const blog = {
 };
 
 const work = {
-	label: "Work",
+	label: "My side projects",
 	title: "My projects",
 	description: `Design and dev projects by ${person.name}`,
 	// Create new project pages by adding a new .mdx file to app/blog/posts
@@ -293,78 +293,7 @@ const gallery = {
 	title: "My photo gallery",
 	description: `A photo collection by ${person.name}`,
 	// Images from https://pexels.com
-	images: [
-		{
-			src: "/images/gallery/img-01.jpg",
-			alt: "image",
-			orientation: "vertical",
-		},
-		{
-			src: "/images/gallery/img-02.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-03.jpg",
-			alt: "image",
-			orientation: "vertical",
-		},
-		{
-			src: "/images/gallery/img-04.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-05.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-06.jpg",
-			alt: "image",
-			orientation: "vertical",
-		},
-		{
-			src: "/images/gallery/img-07.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-08.jpg",
-			alt: "image",
-			orientation: "vertical",
-		},
-		{
-			src: "/images/gallery/img-09.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-10.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-11.jpg",
-			alt: "image",
-			orientation: "vertical",
-		},
-		{
-			src: "/images/gallery/img-12.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-13.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-		{
-			src: "/images/gallery/img-14.jpg",
-			alt: "image",
-			orientation: "horizontal",
-		},
-	],
+	images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
