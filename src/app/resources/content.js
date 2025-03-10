@@ -263,7 +263,7 @@ const about = {
 			},
 			{
 				title:
-					"使用：React, Vue, TypeScript, Python, PostgreSQL, MongoDB, Redis, Git, GitLab",
+					"使用：TypeScript,React, Vue, Python, PostgreSQL, MongoDB, Redis, Docker, Git, GitLab",
 				description: <></>,
 				// optional: leave the array empty if you don't want to display images
 				images: [],
