@@ -107,6 +107,31 @@ const about = {
 			</>
 		),
 	},
+	technical: {
+		display: true, // set to false to hide this section
+		title: "Technical skills",
+		skills: [
+			{
+				title: "AWS Solutions Architect Associate AWS 雲端架構師助理級認證",
+				description: (
+					<>
+						取得 AWS Certified Cloud Practitioner 和 Solutions Architect
+						Associate 認證
+					</>
+				),
+
+				// optional: leave the array empty if you don't want to display images
+				images: [],
+			},
+			{
+				title:
+					"使用：TypeScript,React, Vue, Python, PostgreSQL, MongoDB, Redis, Docker, Git, GitLab",
+				description: <></>,
+				// optional: leave the array empty if you don't want to display images
+				images: [],
+			},
+		],
+	},
 	work: {
 		display: true, // set to false to hide this section
 		title: "Work Experience",
@@ -245,31 +270,7 @@ const about = {
 			},
 		],
 	},
-	technical: {
-		display: true, // set to false to hide this section
-		title: "Technical skills",
-		skills: [
-			{
-				title: "AWS Solutions Architect Associate AWS 雲端架構師助理級認證",
-				description: (
-					<>
-						取得 AWS Certified Cloud Practitioner 和 Solutions Architect
-						Associate 認證
-					</>
-				),
-
-				// optional: leave the array empty if you don't want to display images
-				images: [],
-			},
-			{
-				title:
-					"使用：TypeScript,React, Vue, Python, PostgreSQL, MongoDB, Redis, Docker, Git, GitLab",
-				description: <></>,
-				// optional: leave the array empty if you don't want to display images
-				images: [],
-			},
-		],
-	},
+	
 };
 
 const blog = {
