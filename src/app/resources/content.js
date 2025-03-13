@@ -55,8 +55,7 @@ const home = {
 	headline: <>Fullstack engineer and builder</>,
 	subline: (
 		<>
-			I'm Jessie, a fullstack engineer , also a pharmacist—quite an unusual
-			combination, isn’t it?
+			Hi, I'm Jessie, a full-stack engineer with a background in pharmacy. I leverage my unique blend of technical skills and diverse experience to approach problems from a distinct cross-disciplinary perspective, driving innovation and efficiency in software development.
 			<br /> As a <InlineCode> fullstack engineer </InlineCode> , I craft
 			intuitive user experiences. After hours, I build my own projects.
 		</>
@@ -85,8 +84,8 @@ const about = {
 			<>
 				<div>
 					<p>
-						I’m a full-stack engineer, but I’m also a pharmacist—quite an
-						unusual combination, isn’t it? In the field of software engineering,
+						I'm a full-stack engineer with a background in pharmacy.
+						In the field of software engineering,
 						I’m passionate about simplifying complex challenges and designing
 						solutions that are both intuitive and user-friendly. As a
 						pharmacist, I bring extensive clinical experience in medicine to the
@@ -98,7 +97,7 @@ const about = {
 				</div>
 				<div>
 					<p>
-						我是個全端工程師，但同時也是一名藥師——這樣的跨界組合有點特殊？
+						我是一名全端工程師，同時具備藥學背景。
 						在軟體工程領域，我熱衷於將複雜的挑戰化繁為簡，設計出直觀又好用的解決方案。
 						作為一名藥師，我擁有豐富的臨床醫學經驗。
 						這些經驗使我能夠以獨特的視角切入問題，為軟體開發和醫療領域帶來創新的解決方案。無論面對何種挑戰，我都能夠運用跨領域知識，高效且創新地完成任務！
