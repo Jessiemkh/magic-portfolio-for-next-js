@@ -55,7 +55,7 @@ const home = {
 	headline: <>Fullstack engineer and builder</>,
 	subline: (
 		<>
-			Hi, I'm Jessie,  I leverage my unique blend of technical skills and diverse experience to approach problems from a distinct cross-disciplinary perspective, driving innovation and efficiency in software development.
+			Hi, I'm Jessie, a full-stack engineer,also a licensed pharmacist.  I leverage my unique blend of technical skills and diverse experience to approach problems from a distinct cross-disciplinary perspective, driving innovation and efficiency in software development.
 			<br /> As a <InlineCode> fullstack engineer </InlineCode> , I craft
 			intuitive user experiences. After hours, I build my own projects.
 		</>
