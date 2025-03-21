@@ -1,5 +1,5 @@
 ---
-title: "AI-Powered Knowledge Base with YouTube, File Parsing, and Tavily Search Integration / RAG AI 驅動的知識庫：整合YouTube、檔案解析和Tavily搜尋"
+title: "A LangChain-Powered RAG AI System with YouTube, File Parsing, and Tavily Search Integration / RAG AI LangChain驅動的知識庫：整合YouTube、檔案解析和Tavily搜尋"
 summary: "Parse Youtube url or upload files as your RAG knowledge base and use LangChain as tool. (mimic notebookLLM)"
 images:
   - "/images/projects/project-01/RAGDemo.mp4"
@@ -16,11 +16,11 @@ link: "https://github.com/Jessiemkh/RAG-LangChain-Youtube-Files-in-Colab.git"
 
 ## Project Overview
 
-This system can parse YouTube URLs or uploaded files to build a knowledge base for Retrieval-Augmented Generation (RAG) AI, with the added capability of web search using Tavily API when the knowledge base lacks sufficient information.
+This system leverages the LangChain framework to parse YouTube URLs or uploaded files, building a knowledge base for Retrieval-Augmented Generation (RAG) AI. It also integrates Tavily API for web searches when the knowledge base lacks sufficient information, ensuring comprehensive responses.
 
-- **Intelligent Parsing**: Implemented an automated process that extracts key information from YouTube videos or uploaded files, converting it into AI-digestible formats.
+- **Intelligent Parsing**: Implemented an automated process that extracts key information from YouTube videos or uploaded files, converting it into AI-digestible formats. This process utilizes LangChain's document loaders and text splitters to handle raw data, converting it into efficiently indexed formats.
 
-- **Dynamic Knowledge Base**: Established a flexible knowledge base system that can be continuously updated and expanded, ensuring the AI always has access to the most recent information.
+- **Dynamic Knowledge Base**: Established a flexible knowledge base system that can be continuously updated and expanded, ensuring the AI always has access to the most recent information. LangChain's integration with vector databases (such as FAISS ) enhances the efficiency of storing and retrieving text embeddings.
 
 - **RAG AI Integration**: Leveraged parsed data to enhance the AI's generative capabilities, enabling it to provide more accurate and relevant responses.
 
@@ -29,6 +29,7 @@ This system can parse YouTube URLs or uploaded files to build a knowledge base f
 ## Technologies Used
 
 - **YouTube Data API**: For extracting data directly from YouTube videos.
+- **LangChain**: For building RAG workflows, including document loading, text splitting, vector embeddings, and LLM integration.
 - **Natural Language Processing (NLP)**: For processing and analyzing textual data.
 - **Vector Database**: For efficient storage and retrieval of text embeddings.
 - **Large Language Models**: For generating responses and understanding user queries.
@@ -41,16 +42,15 @@ One of the main challenges was ensuring that information extracted from diverse 
 ## Outcome
 
 This enhanced RAG AI system significantly improved the quality and relevance of AI responses. By leveraging YouTube content, user-uploaded documents, and real-time web searches through Tavily, the AI can provide richer, more accurate, and up-to-date information. This project demonstrates how to effectively integrate large-scale online resources, user-specific content, and dynamic web search capabilities into AI systems, offering personalized and knowledge-rich experiences to users, even when the local knowledge base is limited.
-
 # YouTube、文件解析和 Tavily 搜索集成的 RAG AI 系統
 
 ## 項目概述
 
-系統能夠解析 YouTube URL 或上傳的文件，將其作為知識庫來構建檢索增強生成（RAG）AI，並在知識庫內容不足時，通過 Tavily API 進行網絡搜索，以提供全面的回答。
 
-- **智能解析**：實現了自動化流程，可以從 YouTube 視頻或上傳的文件中提取關鍵信息，並將其轉換為 AI 可理解的格式。
+系統利用 LangChain 框架來解析 YouTube URL 或上傳的文件，構建一個檢索增強生成（RAG）AI 的知識庫，並在知識庫內容不足時，通過 Tavily API 進行網絡搜索，以提供全面的回答。
 
-- **動態知識庫**：建立了一個靈活的知識庫系統，可以持續更新和擴展，確保 AI 始終能夠訪問最新的信息。
+- **智能解析**：實現了自動化流程，可以從 YouTube 影片或上傳的文件中提取關鍵信息，並將其轉換為 AI 可理解的格式。這一過程使用 LangChain 的文檔加載器和文本分割器來處理原始數據，將其轉換為高效的索引格式。
+- **動態知識庫**：建立了一個靈活的知識庫系統，可以持續更新和擴展，確保 AI 始終能夠訪問最新的信息。LangChain 的向量數據庫整合（ FAISS ）使得文本嵌入的儲存和檢索更加高效。
 
 - **RAG AI 集成**：利用解析的數據來增強 AI 的生成能力，使其能夠提供更準確、更相關的回應。
 
@@ -58,7 +58,8 @@ This enhanced RAG AI system significantly improved the quality and relevance of 
 
 ## 使用的技術
 
-- **YouTube Data API**：用於直接從 YouTube 視頻中提取數據。
+- **YouTube Data API**：用於直接從 YouTube 影片中提取數據。
+- **LangChain**：用於構建 RAG 工作流程，包括文檔加載、文本分割、向量嵌入和 LLM 整合。
 - **自然語言處理（NLP）**：用於處理和分析文本數據。
 - **向量數據庫**：用於高效存儲和檢索文本嵌入。
 - **大型語言模型**：用於生成回應和理解用戶查詢。
@@ -66,7 +67,7 @@ This enhanced RAG AI system significantly improved the quality and relevance of 
 
 ## 挑戰與學習
 
-主要挑戰之一是確保從不同來源（YouTube、上傳文件和網絡搜索）提取的信息能夠有效地整合到知識庫中。這涉及開發智能的數據處理管道，處理各種邊緣情況，如視頻字幕的質量、文件格式的多樣性以及網絡搜索結果的相關性。此外，優化 RAG 系統以提供準確且相關的回應也需要大量的調優和測試，特別是在結合本地知識和網絡搜索結果時。
+主要挑戰之一是確保從不同來源（YouTube、上傳文件和網絡搜索）提取的信息能夠有效地整合到知識庫中。這涉及開發智能的數據處理管道，處理各種邊緣情況，如影片字幕、文件格式的多樣性以及網絡搜索結果的相關性。此外，優化 RAG 系統以提供準確且相關的回應也需要大量的調優和測試，特別是在結合本地知識和網絡搜索結果時。
 
 ## 成果
 
